@@ -1,0 +1,6 @@
+# /etc/fstab: static file system information
+UUID=8b4415fc-86af-4097-8b9e-4b50388d5537 / ext4 rw,discard,errors=remount-ro,x-systemd.growfs 0 1
+UUID=CE0D-300D /boot/efi vfat defaults 0 0
+# 2021-04-03 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Setup the instance store": https://github.com/canadasatellite-ca/3.133.129.101/issues/6
+UUID=55d295e1-837b-4116-a213-d1c0f3bb94de  /L  ext4  defaults,nofail  0  2
