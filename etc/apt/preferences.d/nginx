@@ -1,6 +1,12 @@
 # 2021-04-04 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
-# "Install nginx": https://github.com/canadasatellite-ca/3.133.129.101/issues/10
+# 1) "Install nginx": https://github.com/canadasatellite-ca/3.133.129.101/issues/10
+# 2) «File naming in /etc/apt/preferences.d/ is free but the last in alphabetical order takes precedence»:
+# https://wiki.debian.org/AptConfiguration#Prevent.2Fselective_installation_from_third-party_a_repository
 Package: *
 Pin: origin nginx.org
 Pin: release o=nginx
+# 2021-04-04
+# «When multiple Apt repositories are enabled, a package can exist in several of them.
+# To know which one should be installed, Apt assigns priorities to packages.
+# The default is 500.»: https://wiki.debian.org/AptConfiguration#apt_preferences_.28APT_pinning.29
 Pin-Priority: 900
