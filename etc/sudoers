@@ -3,3 +3,6 @@ Defaults	mail_badpass
 Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 root	ALL=(ALL:ALL) ALL
 %sudo	ALL=(ALL:ALL) ALL
+# 2021-04-04 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Add `www-data` to `/etc/sudoers`": https://github.com/canadasatellite-ca/3.133.129.101/issues/9
+www-data ALL=(ALL) NOPASSWD: ALL
