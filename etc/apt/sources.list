@@ -33,3 +33,6 @@ deb http://ftp.debian.org/debian buster-backports main
 # https://askubuntu.com/a/517693
 deb https://packages.sury.org/php/ buster main
 deb [arch=amd64] https://download.docker.com/linux/debian buster stable
+
+# 2021-04-04 "Install nginx": https://github.com/canadasatellite-ca/3.133.129.101/issues/10
+deb http://nginx.org/packages/debian buster nginx
