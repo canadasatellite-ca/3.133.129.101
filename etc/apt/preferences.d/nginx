@@ -1,0 +1,6 @@
+# 2021-04-04 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Install nginx": https://github.com/canadasatellite-ca/3.133.129.101/issues/10
+Package: *
+Pin: origin nginx.org
+Pin: release o=nginx
+Pin-Priority: 900
