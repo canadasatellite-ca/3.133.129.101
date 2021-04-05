@@ -1,2 +1,5 @@
 # 2021-03-16 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
 /_my
+# 2021-04-05 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Install MySQL": https://github.com/canadasatellite-ca/3.133.129.101/issues/14
+/etc/mysql/credentials.cnf
