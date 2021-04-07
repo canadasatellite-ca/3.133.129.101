@@ -11,4 +11,4 @@
 /L/www/pma/config.inc.php
 # 2021-04-07 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
 # "Setup SSH access to the previous server (34.233.101.120)": https://github.com/canadasatellite-ca/3.133.129.101/issues/17
-/root/.ssh/private-key
+/root/.ssh/private
