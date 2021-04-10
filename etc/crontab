@@ -15,4 +15,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 # 2021-04-05 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
 # "Install Certbot for Let's Encrypt": https://github.com/canadasatellite-ca/3.133.129.101/issues/12
 @daily www-data sudo certbot renew && sudo service nginx restart
+# 2021-04-10 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Setup Cron for Magento": https://github.com/canadasatellite-ca/3.133.129.101/issues/18
+* * * * * www-data php /L/www/canadasatellite.ca/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /L/www/canadasatellite.ca/var/log/magento.cron.log
+* * * * * www-data php /L/www/canadasatellite.ca/update/cron.php >> /L/www/canadasatellite.ca/var/log/update.cron.log
+* * * * * www-data php /L/www/canadasatellite.ca/bin/magento setup:cron:run >> /L/www/canadasatellite.ca/var/log/setup.cron.log
 # 2021-04-05 A crontab should ends with a newline: https://serverfault.com/a/230407
