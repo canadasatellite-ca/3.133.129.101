@@ -1,0 +1,9 @@
+# 2021-04-11 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Install Erlang for RabbitMQ": https://github.com/canadasatellite-ca/3.133.129.101/issues/21
+Package: erlang*
+# 2021-04-04
+# «When multiple Apt repositories are enabled, a package can exist in several of them.
+# To know which one should be installed, Apt assigns priorities to packages.
+# The default is 500.»: https://wiki.debian.org/AptConfiguration#apt_preferences_.28APT_pinning.29
+Pin-Priority: 1000
+Pin: release o=Bintray
