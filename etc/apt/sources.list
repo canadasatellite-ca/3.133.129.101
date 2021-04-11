@@ -35,4 +35,8 @@ deb https://packages.sury.org/php/ buster main
 deb [arch=amd64] https://download.docker.com/linux/debian buster stable
 
 # 2021-04-04 "Install nginx": https://github.com/canadasatellite-ca/3.133.129.101/issues/10
-deb http://nginx.org/packages/debian buster nginx
+deb http://nginx.org/packages/debian buster nginxdeb https://dl.bintray.com/rabbitmq-erlang/debian buster erlang
+
+# 2021-04-11 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Install Erlang for RabbitMQ": https://github.com/canadasatellite-ca/3.133.129.101/issues/21
+deb https://dl.bintray.com/rabbitmq-erlang/debian buster erlang
