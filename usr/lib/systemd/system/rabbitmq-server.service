@@ -1,0 +1,22 @@
+[Unit]
+After=network.target epmd@0.0.0.0.socket
+Description=RabbitMQ broker
+Wants=network.target epmd@0.0.0.0.socket
+
+[Service]
+ExecStart=/usr/lib/rabbitmq/bin/rabbitmq-server
+ExecStop=/usr/lib/rabbitmq/bin/rabbitmqctl shutdown
+Group=rabbitmq
+LimitNOFILE=32768
+NotifyAccess=all
+Restart=on-failure
+RestartSec=10
+SuccessExitStatus=69
+TimeoutStartSec=600
+Type=notify
+UMask=0027
+User=rabbitmq
+WorkingDirectory=/var/lib/rabbitmq
+
+[Install]
+WantedBy=multi-user.target
