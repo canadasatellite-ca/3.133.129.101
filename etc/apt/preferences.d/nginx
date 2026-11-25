@@ -1,4 +1,4 @@
-# 2021-04-04 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# 2021-04-04 Dmitry Fedyuk https://github.com/dmitrii-fediuk
 # 1) "Install nginx": https://github.com/canadasatellite-ca/3.133.129.101/issues/10
 # 2) «File naming in /etc/apt/preferences.d/ is free but the last in alphabetical order takes precedence»:
 # https://wiki.debian.org/AptConfiguration#Prevent.2Fselective_installation_from_third-party_a_repository

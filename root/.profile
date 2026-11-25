@@ -6,7 +6,7 @@ if [ "$BASH" ]; then
   fi
 fi
 
-# 2021-04-03 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# 2021-04-03 Dmitry Fedyuk https://github.com/dmitrii-fediuk
 # "Setup console for `root`": https://github.com/canadasatellite-ca/3.133.129.101/issues/2
 export PS1='\[\e[01;33m\]\w\n\[\e[01;31m\]\$ \[\e[00m\]'
 umask 022
